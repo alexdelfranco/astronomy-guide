@@ -4,8 +4,5 @@ sort: 5
 
 # The HR Diagram
 
-#### [Puzzle Page](5-p.pdf) | *Solution Missing*
-#### *Authorship Missing*
-
-##### Puzzles in Meta:
+## Sections in this Chapter:
 {% include list.liquid all=true %}
