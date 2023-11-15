@@ -1,32 +1,15 @@
-# starter
+# Astronomy Guide
 
-1. [Generate with the same files and folders](https://github.com/rundocs/starter/generate) from this repository
-2. Set up your GitHub Pages to source(`/`)
-3. Now you can view your documentation in your site
+This guide brings the relaxed nature of a conversation with a friend to the grandeur of the night sky. Engage, play, and learn through our streamlined explanations, interactive graphics, and intuitive applets!
 
-## site.pages
+## Development
 
-<!-- prettier-ignore-start -->
+This site is an experiment in public, activity-driven education. To the left, you will find a series of activites, labs, and online resources that combine to form an introductory course in stellar astrophysics.
 
-| source          | link                                                           |
-| --------------- | -------------------------------------------------------------- |
-{% for page in site.pages -%}
-| {{ page.path }} | [{{ page.url | relative_url }}]({{ page.url | relative_url }}) |
-{% endfor %}
+## Structure
 
-<!-- prettier-ignore-end -->
+The course is broken up into three stages, each of which contains for chapters. You can access the chapters through the menu on the left.
 
-## Documents
+## Questions and Feedback
 
-https://jekyll-rtd-theme.rundocs.io
-
-## Local debug
-
-```sh
-make
-make server
-```
-
-## The license
-
-The theme is available as open source under the terms of the MIT License
+The development of this project is active and ongoing. If you find errors or areas which you believe can be improved, please reach out to dev@astronomyguide.org.
