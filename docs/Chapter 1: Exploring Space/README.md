@@ -1,3 +1,4 @@
-# Chapter 1 
+# Chapter 1: Exploring Space
 
-source: `{{ page.path }}`
+### What does it mean to 
+
