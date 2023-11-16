@@ -1,3 +1,7 @@
+---
+sort: 1
+---
+
 # Plotting Code for MESA
 
 Copy the following into the &pgstar section of the main inlist or the common inlist (if one exists).
