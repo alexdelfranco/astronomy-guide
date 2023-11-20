@@ -11,6 +11,11 @@ sort: 1
 test2
 </p>
 </div> -->
+<div id="parallaxContainer"></div>
+
+<script type="module" src="https://alexdelfranco.github.io/Parallax/parallax.js">
+
+</script>
 
 <style>
 .myDiv {
