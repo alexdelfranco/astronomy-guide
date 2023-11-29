@@ -1,0 +1,219 @@
+
+&star_job
+      show_log_description_at_start = .false.
+
+      
+      change_net = .true.      
+      new_net_name = 'co_burn_extras.net'
+      
+      set_initial_age = .false.
+      set_initial_model_number = .false.
+
+      pgstar_flag = .true.
+
+      num_special_rate_factors = 2
+      reaction_for_special_factor(1) = 'r_c12_ag_o16'
+      special_rate_factor(1) = 1
+      filename_of_special_rate(1) = 'r_c12_ag_o16_kunz.txt'
+
+      reaction_for_special_factor(2) = 'r_he4_he4_he4_to_c12'
+      special_rate_factor(2) = 1
+      filename_of_special_rate(2) = 'r_he4_he4_he4_to_c12_cf88.txt'
+
+/ ! end of star_job namelist
+
+&eos
+
+
+/ ! end of eos namelist
+
+&kap
+      Zbase = 0.02d0
+
+      kap_file_prefix = 'gs98'
+      use_Type2_opacities = .true.
+
+/ ! end of kap namelist
+
+&controls
+
+      initial_mass = 4d0 ! this default produces a ~0.6 Msun WD.
+      ! initial_mass in the range 1.0-6.5 Msun will produce CO WDs
+      ! with masses 0.5-1.0 Msun.
+      ! Initial mass around 7 or larger will likely ignite carbon in
+      ! the core, and the test will fail because this would produce an
+      ! ONe WD.
+
+      initial_z = 0.02d0
+      
+      photo_interval = 50
+	photo_digits = 5
+
+! opacity
+
+! when to stop
+      max_age = 14d9
+
+! mesh
+      mesh_delta_coeff = 1.5
+
+! diffusion
+      !do_element_diffusion = .true.    
+      !do_WD_sedimentation_heating = .true. 
+      !do_diffusion_heating = .false.
+
+      !show_diffusion_info = .true. ! terminal output for diffusion
+
+      diffusion_v_max = 1d-5
+      
+      ! Bypasses the need to set up diffusion classes.
+      diffusion_use_full_net = .true.
+
+      ! Solver controls.
+      diffusion_use_cgs_solver = .true.
+      diffusion_use_isolve = .true.
+      diffusion_rtol_for_isolve = 1d-4
+      diffusion_atol_for_isolve = 1d-5
+      diffusion_min_X_hard_limit = -1d-4
+      diffusion_maxsteps_for_isolve = 1000
+      diffusion_isolve_solver = 'ros2_solver'
+
+      ! Timestep controls to prevent steps that are difficult for diffusion.
+      diffusion_steps_limit = 20
+      diffusion_steps_hard_limit = 50
+      diffusion_iters_limit = 50
+      diffusion_iters_hard_limit = 100      
+
+! convection
+      mlt_option = 'TDC'
+      mixing_length_alpha = 2
+      use_Ledoux_criterion = .true.
+      thermohaline_coeff = 1d2
+
+! timesteps
+      max_years_for_timestep = 1d9
+      use_gold2_tolerances = .true.
+      
+      varcontrol_target = 1d-3
+      dX_nuc_drop_limit = 3d-2
+      delta_HR_limit = 0.1
+
+      delta_XC_cntr_limit = 0.02d0
+      delta_XO_cntr_limit = 0.02d0
+      delta_XC_cntr_hard_limit = 0.05d0
+      delta_XO_cntr_hard_limit = 0.05d0
+
+! Atm
+      atm_option = 'T_tau'
+      atm_T_tau_relation = 'Eddington'
+      atm_T_tau_opacity = 'iterated'
+      atm_T_tau_max_iters = 100
+
+! Overshoot
+      overshoot_scheme(1) = 'exponential'
+      overshoot_zone_type(1) = 'any'
+      overshoot_zone_loc(1) = 'any'
+      overshoot_bdy_loc(1) = 'any'
+      overshoot_f(1) = 0.014
+      overshoot_f0(1) = 0.004
+
+! Output
+      history_interval = 10
+      terminal_interval = 10 
+      write_header_frequency = 10
+
+
+/ ! end of controls namelist
+
+
+
+&pgstar
+
+! Abundance window -- current model abundance profile
+
+Abundance_win_flag = .true.
+Abundance_win_width = 9
+Abundance_win_aspect_ratio = 0.75 ! aspect_ratio = height/width
+
+Abundance_file_flag = .true.
+Abundance_file_dir = 'png'
+Abundance_file_prefix = 'Abundance_'
+Abundance_file_interval = 5 ! output when mod(model_number,Abundance_file_interval)==0
+Abundance_file_width = -1 ! (inches) negative means use same value as for window
+Abundance_file_aspect_ratio = -1 ! negative means use same value as for window
+
+! TRho Profile window -- current model temperature pressure profile
+
+TRho_Profile_win_flag = .true.
+TRho_Profile_title = 'Burning Stages'
+TRho_Profile_win_width = 9
+TRho_Profile_win_aspect_ratio = 0.75 ! aspect_ratio = height/width
+
+TRho_Profile_file_flag = .true.
+TRho_Profile_file_dir = 'png'
+TRho_Profile_file_prefix = 'Burning_Stages_'
+TRho_Profile_file_interval = 5 ! output when mod(model_number,TRho_Profile_file_interval)==0
+TRho_Profile_file_width = -1 ! (inches) negative means use same value as for window
+TRho_Profile_file_aspect_ratio = -1 ! negative means use same value as for window
+
+! HR Diagram window -- current model HR diagram
+
+HR_win_flag = .true.
+HR_title = 'HR Diagram'
+HR_win_width = 9
+HR_win_aspect_ratio = 0.75 ! aspect_ratio = height/width
+
+HR_file_flag = .true.
+HR_file_dir = 'png'
+HR_file_prefix = 'HR_Diagram_'
+HR_file_interval = 5 ! output when mod(model_number,HR_file_interval)==0
+HR_file_width = -1 ! (inches) negative means use same value as for window
+HR_file_aspect_ratio = -1 ! negative means use same value as for window
+
+! Power window -- current model of power profile
+
+Power_win_flag = .true.
+Power_title = 'Nuclear Power Density'
+Power_win_width = 9
+Power_win_aspect_ratio = 0.75 ! aspect_ratio = height/width
+
+Power_file_flag = .true.
+Power_file_dir = 'png'
+Power_file_prefix = 'Nuclear_Power_Density_'
+Power_file_interval = 5 ! output when mod(model_number,Power_file_interval)==0
+Power_file_width = -1 ! (inches) negative means use same value as for window
+Power_file_aspect_ratio = -1 ! negative means use same value as for window
+
+! Radial Temp and Pressure Plot -- current model mass profile vs pressure and temperature
+
+Profile_Panels6_win_flag = .true.
+Profile_Panels6_title = 'Radial Temperature & Pressure'
+Profile_Panels6_num_panels = 1
+Profile_Panels6_xaxis_name = 'mass'
+Profile_Panels6_yaxis_name = 'logT'
+Profile_Panels6_other_yaxis_name = 'logP'
+Profile_Panels6_win_width = 9
+Profile_Panels6_win_aspect_ratio = 0.75 ! aspect_ratio = height/width
+
+Profile_Panels6_file_flag = .true.
+Profile_Panels6_file_dir = 'png'
+Profile_Panels6_file_prefix = 'Rad_Temp_Pressure_'
+Profile_Panels6_file_interval = 5 ! output when mod(model_number,Profile_Panels6_file_interval)==0
+Profile_Panels6_file_width = -1 ! (inches) negative means use same value as for window
+Profile_Panels6_file_aspect_ratio = -1 ! negative means use same value as for window
+
+! Model History Plot -- current model history
+
+History_Panels1_win_flag = .true.
+History_Panels1_title = 'Recent Model History'
+History_Panels1_win_width = 9
+History_Panels1_win_aspect_ratio = 0.75 ! aspect_ratio = height/width
+
+History_Panels1_file_flag = .true.
+History_Panels1_file_dir = 'png'
+History_Panels1_file_prefix = 'Model_History_'
+History_Panels1_file_interval = 5 ! output when mod(model_number,History_Panels1_file_interval)==0
+History_Panels1_file_width = -1 ! (inches) negative means use same value as for window
+History_Panels1_file_aspect_ratio = -1 ! negative means use same value as for window
+
+/ ! end of pgstar namelist
