@@ -1,4 +1,4 @@
-# ICA 10 - Mysterious Experiements in Stellar Astrophysics
+# ICA 10 - Mysterious Experiments in Stellar Astrophysics
 
 The ancient Tomb of Stellar Evolution has just been uncovered. At its heart, it is rumored to hold some of the most fundamental secrets of the universe. But the Tomb is sealed by an impenetrable barrier that can only be unlocked with the correct sequence of 10 letters.
 
