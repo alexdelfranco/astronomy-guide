@@ -19,4 +19,3 @@
 - Sketch a graph of a star's lifetime versus it's mass (with mass on the x-axis and lifetime on the y-axis).
 - What range of stellar lifetimes do we observe (condider stars with masses from 1M to 100M)
 
-3. 
