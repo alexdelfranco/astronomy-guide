@@ -76,4 +76,4 @@ To run Python on our computers, we will use Google Colaboratory (or Colab for sh
 
 For each Notebook, follow the instructions included and return to this activity page when you are finished. Happy coding!
 
-### <a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/Astronomy%20Guide/1.%20Exploring%20the%20Sky/1.1%20Categorizing%20the%20Sky/astrometry.ipynb" target="_blank">Click here to access the first Python activity!</a>
+### <a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/AstronomyGuide/Exploring-the-Sky/Categorizing-the-Sky/activities/astrometry.ipynb" target="_blank">Click here to access the first Python activity!</a>

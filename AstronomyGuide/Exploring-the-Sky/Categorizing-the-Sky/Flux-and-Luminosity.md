@@ -36,9 +36,10 @@ Flux and luminosity are measures of brightness. Luminosity measures total energy
 
 In this activity we are going to learn how to do some simple math in Python and then calculate the flux of the Sun! You will get introduced to a very useful Python package called `astropy` which can be used to find useful constants and make unit conversions easy. You will use the equation for flux above and practice the ideas you have learned in this section in preparation for Activity 2.
 
-### <a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/Astronomy%20Guide/1.%20Exploring%20the%20Sky/1.1%20Categorizing%20the%20Sky/flux1.ipynb" target="_blank">Click here to access the first Python activity for this section!</a>
+### <a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/AstronomyGuide/Exploring-the-Sky/Categorizing-the-Sky/activities/flux1.ipynb" target="_blank">Click here to access the first Python activity for this section!</a>
 
 ## Activity 2
 
 In this activity you will calculate the fluxes and the luminosities of all the stars in our original Hubble image! Since we know the distance to the cluster of stars in the image (known as Westerlund 2 or NGC 3247), we can use the measured brightnesses to find the stars' fluxes and then their luminosities. With a bit of Python magic we can add those values to the hover box so that you can easily see information about every star on the plot.
 
+### <a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/AstronomyGuide/Exploring-the-Sky/Categorizing-the-Sky/activities/flux2.ipynb" target="_blank">Click here to access the second Python activity for this section!</a>
