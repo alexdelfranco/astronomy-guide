@@ -14,7 +14,7 @@ As the area of the beam spreads out by a factor of \\(d^2\\) where \\(d\\) is th
 
 $$\mathrm{Intensity} = \dfrac{\mathrm{\#\ of\ photons}}{\mathrm{Area}}$$
 
-Since the \\(# of photons\\) is constant and Area is in the denominator, we can reason that
+Since the # of photons is constant and Area is in the denominator, we can reason that
 
 $$\mathrm{Intensity} \sim \dfrac{1}{d^2}$$
 

@@ -56,7 +56,7 @@ While we wait for the image to process, lets examine it a bit more closely. Here
 
 #### Answers:
 
-It turns out that the plus signs are caused by the type of telescope that took the picture. The Hubble Telescope orbits the Earth and has been taking images of space since the 1990s. Because of how the camera was built, close and bright stars have a characteristic x-shaped pattern that shows up. All stars are in fact spherical in shape. We will leave the answers to the other two questions for later in this course. Color is actually one of the best ways we can learn about space, so we need to save it for a full future chapter.
+It turns out that the plus signs are caused by structural supports that block part of the main mirror of telescope that took the picture. The Hubble Telescope orbits the Earth and has been taking images of space since the 1990s. Because of how the camera was built, close and bright stars have a characteristic x-shaped pattern that shows up. All stars are in fact spherical in shape. We will leave the answers to the other two questions for later in this course. Color is actually one of the best ways we can learn about space, so we need to save it for a full future chapter.
 
 ---
 

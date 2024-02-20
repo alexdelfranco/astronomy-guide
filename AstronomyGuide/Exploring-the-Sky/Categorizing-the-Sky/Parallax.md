@@ -43,7 +43,7 @@ where the angle \\(p''\\) is in arcseconds (the two apostrophes signal arcsecond
 
 We can measure the distance to stars using their motion in the sky. Every year, stars appear to wobble back and forth because our viewpoint is changing — we are orbiting the Sun.
 
-Since a smaller wobble means the stars are further away, we can 
+Since a smaller wobble means the stars are further away, we can use the measured wobble to calculate the distance to the star using the parallax equation above.
 
 ## Activity
 
