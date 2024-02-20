@@ -24,7 +24,7 @@ where \\(d\\) is the distance from the source. This makes intuitive sense, since
 
 The 3D visualization included below allows you to easily view the spreading out of light eminating from a source. Click the two arrows pointing left to hide the equation panel. Then click the orange star to emit a wave of light. Click it again to emit another!
 
-<iframe src="https://www.desmos.com/3d/abad95bf9d?embed" width="100%vw" height="800" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/3d/26fe76649e" width="100%vw" height="800" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 Since the total energy of the light is conserved, the intensity must drop at each new distance from the center!
 
