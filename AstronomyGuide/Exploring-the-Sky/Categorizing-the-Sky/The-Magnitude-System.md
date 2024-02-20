@@ -4,7 +4,7 @@ sort: 5
 
 # The Magnitude System
 
-#### Definition: 
+**Definition: **
 
 ## Background
 

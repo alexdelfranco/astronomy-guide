@@ -4,7 +4,7 @@ sort: 3
 
 # The Inverse Square Law
 
-#### Definition: As light moves away from a source it spreads out and its intensity is inversely proportional to the distance from the source.
+**Definition: As light moves away from a source it spreads out and its intensity is inversely proportional to the distance from the source.**
 
 ## Background
 

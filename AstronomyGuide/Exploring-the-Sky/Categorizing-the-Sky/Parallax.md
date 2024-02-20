@@ -4,7 +4,7 @@ sort: 2
 
 # Parallax
 
-#### Definition: Parallax is a method used to determine the distance to an object. By recording the angle that the object moves across the sky, you are able to determine how far away from Earth the object is.
+**Definition: Parallax is a method used to determine the distance to an object. By recording the angle that the object moves across the sky, you are able to determine how far away from Earth the object is.**
 
 ## Background
 

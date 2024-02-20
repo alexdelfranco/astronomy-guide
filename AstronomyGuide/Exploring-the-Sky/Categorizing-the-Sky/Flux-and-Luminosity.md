@@ -4,7 +4,7 @@ sort: 4
 
 # Flux and Luminosity
 
-#### Definition: Flux and luminosity both measure of brightness of stars. Luminosity is the total energy a star emits each second. Flux is the luminosity of a star divided by area – it measures how bright a star appears when it is some distance \\(r\\) away.
+**Definition: Flux and luminosity both measure of brightness of stars. Luminosity is the total energy a star emits each second. Flux is the luminosity of a star divided by area – it measures how bright a star appears when it is some distance \\(r\\) away.**
 
 ## Background
 
