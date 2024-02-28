@@ -79,15 +79,41 @@ Now that \\(a\\) is randomized, we can update our photon's position. At the end 
 
 $$X\to X+\cos d_{a},Y\to Y+\sin d_{a}$$
 
-Nice job! Now when you click the arrow to the left of the action, you should see the photon jump in a random direction. Now that we have our action, lets automate!
+Nice job! Now when you click the arrow to the left of the action, you should see the photon jump in a random direction. *Move \\(a\\) and \\(A\\) into a new folder called **Actions**.*
+
+Now that we have our action, lets automate!
 
 ### Automating our Model
 
-Before we fully automate, we should add a couple simple variables. Add a variable called \\(N\\) to measure the number of steps our photon takes. Set it equal to \\(0\\). Then add a vairable called \\(D\\) which measures the distance that our photon is from the center of the star. Set \\(D\\) equal to the square root of \\(X^2 + Y^2\\)
+#### Step Count and Distnace
 
+Before we fully automate, we should add a couple simple variables. Add a variable called \\(N\\) to measure the number of steps our photon takes. Set it equal to \\(0\\) for now. Then add a vairable called \\(D\\) which measures the distance that our photon is from the center of the star. Set \\(D\\) equal to the square root of \\(X^2 + Y^2\\).
 
+To make \\(N\\) update automatically, add a comma at the end of your expression for the action \\(A\\). After the comma, add
 
+$$ N \to N + 1 $$
 
+Now when you click the arrow to the left of \\(A\\), the value of \\(N\\) should increase.
+
+#### Adding a Ticker
+
+Now we can automate! Click the **+** button at the top of the left panel and add a **ticker**. You should see the ticker appear as a bar above the panel. This ticker will run an action every certain number of milliseconds (10 milliseconds by default). We want it to move the photon randomly until it reaches the edge of our star. We can do this by adding a conditional statement. Following the word *Run* in the ticker bar, type:
+
+$${D<100:A}$$
+
+This means that as long as \\(D\\) is less than \\(100\\) (the radius we specified for our star) it will keep running our action A. Drag the photon to the center of the star and click the ticker button (which looks like a metronome) to see our model run!
+
+### Tweaks to Make the Model Better
+
+We are almost done with the model! We can add two more things to make it a little easier to use. First, lets add a **Reset** button. Add a new expression called *R* or *R_eset*. We want to set it equal to three actions, all of which help reset the model.
+
+$$ R_{eset} = N \to 0, X \to 0, Y \to 0 $$
+
+Now whenever you click the arrow next to \\(R_{eset}\\) the photon moves back to the center of our star and the counter is reset. 
+
+Finally, click the wrench icon in the top right of the screen. Under the *Grid* section, change the graph to polar (circular) coordinates. Then uncheck the boxes next to *X-axis* and *Y-axis*. This should make your model a lot more readable.
+
+Congrats!! Now we can use our model to answer build some intuition for how particles move through a star. Take a couple minutes to play around with your graph. And make sure to click the blue save button!
 
 
 
