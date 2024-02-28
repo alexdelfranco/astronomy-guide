@@ -69,7 +69,7 @@ $$ a = 0 $$
 
 We can set this to a random angle using the \\(\mathrm{random()}\\) function in Desmos. \\(\mathrm{random()}\\) conveniently returns a random number between \\(0\\) and \\(1\\). If we multiply \\(\mathrm{random()}\\) by \\(2\pi\\) we can get a truly random angle.
 
-To set \\(a\\) to our random angle, we need to use an **Action**. Action in Desmos use right-facing arrows (\\(\to\\)) and are typed by pressing a minus sign followed by a greater-than sign (->) with no space inbetween. Here we want our action to set \\(a\\) to \\(\2\pi * mathrm{random()}\\) and we can do this by typing:
+To set \\(a\\) to our random angle, we need to use an **Action**. Action in Desmos use right-facing arrows (\\(\to\\)) and are typed by pressing a minus sign followed by a greater-than sign (->) with no space inbetween. Here we want our action to set \\(a\\) to \\(\2\pi * \mathrm{random()}\\) and we can do this by typing:
 
 $$ a \to 2\pi * \mathrm{random()} $$
 
@@ -79,9 +79,9 @@ The symbol to the left of the expression should change to resemble an arrow. If 
 
 #### Moving our Photon
 
-Now that \\(a\\) is randomized, we can update our photon's position. At the end of the last expression, add a comma after \\(\mathrm{random()}\\). We are going to add two more actions here to add \\(cos \theta\\) to \\(X\\) and \\(sin \theta\\) to \\(Y\\). After the comma, type
+Now that \\(a\\) is randomized, we can update our photon's position. At the end of the last expression, add a comma after \\(\mathrm{random()}\\). We are going to add two more actions here to add \\(cos a\\) to \\(X\\) and \\(sin a\\) to \\(Y\\). After the comma, type
 
-$$X\to X+\cos d_{a},Y\to Y+\sin d_{a}$$
+$$X\to X+\cos a,Y\to Y+\sin a$$
 
 Nice job! Now when you click the arrow to the left of the action, you should see the photon jump in a random direction. *Move \\(a\\) and \\(A\\) into a new folder called **Actions**.*
 
@@ -133,17 +133,12 @@ Hmm. Maybe we could find a relationship between the radius of our star and the n
 
 Now use your relation between \\(D\\) and \\(N\\) to calculate the number of steps a photon needs to take to escape from the Sun. (For \\(D\\) use the radius of the Sun measured in centimeters.) Now find how long it takes the photon to escape from the Sun. Is your answer what you expected?
 
-A star with twice the mass of the sun should have a radius ?? times as big. In general,
+A star with twice the mass of the sun should have a radius two times as big. In general,
 
-$$ M \sim R?? $$
+$$ M \sim R $$
 
 Use this relation and your answers to the questions above to calculate how long it should take for a photon to escape stars with masses 2,5,10, and 50 times the mass of the Sun. Sketch or plot the escape time of a photon versus the mass of the star it's escaping (on the x-axis plot masses from 1 to 50 times the mass of the Sun and on the y-axis plot time). Does this curve look like what you expected?
 
-
-
-
-
-<!-- <iframe src="https://www.desmos.com/calculator/ectyu6rioo" width="100%vw" height="800" style="border: 1px solid #ccc" frameborder=0></iframe> -->
 
 
 <!-- 
