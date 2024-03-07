@@ -39,6 +39,7 @@ This should plot a circle with a radius of 100 centered on the origin. Zoom out 
 We can now add a photon to our model. On two new lines on the left menu, create two variables, **X** and **Y**, each set to the value of \\(0\\).
 
 $$ X = 0 $$
+
 $$ Y = 0 $$
 
 Desmos recognizes two numbers separated by a comma between parentheses as a point. We can plot our photon by typing:
@@ -69,7 +70,7 @@ $$ a = 0 $$
 
 We can set this to a random angle using the \\(\mathrm{random()}\\) function in Desmos. \\(\mathrm{random()}\\) conveniently returns a random number between \\(0\\) and \\(1\\). If we multiply \\(\mathrm{random()}\\) by \\(2\pi\\) we can get a truly random angle.
 
-To set \\(a\\) to our random angle, we need to use an **Action**. Action in Desmos use right-facing arrows (\\(\to\\)) and are typed by pressing a minus sign followed by a greater-than sign (->) with no space inbetween. Here we want our action to set \\(a\\) to \\(\2\pi * \mathrm{random()}\\) and we can do this by typing:
+To set \\(a\\) to our random angle, we need to use an **Action**. Action in Desmos use right-facing arrows (\\(\to\\)) and are typed by pressing a minus sign followed by a greater-than sign (->) with no space inbetween. Here we want our action to set \\(a\\) to \\(2\pi * \mathrm{random()}\\) and we can do this by typing:
 
 $$ a \to 2\pi * \mathrm{random()} $$
 
@@ -84,6 +85,8 @@ Now that \\(a\\) is randomized, we can update our photon's position. At the end 
 $$X\to X+\cos a,Y\to Y+\sin a$$
 
 Nice job! Now when you click the arrow to the left of the action, you should see the photon jump in a random direction. *Move \\(a\\) and \\(A\\) into a new folder called **Actions**.*
+
+We can change how far the photon jumps by adding a multiplier in front of our \\(sin\\) and \\(cos\\) expressions. Create a variable called \\(l\\) and put it in a new folder called **Variables**. Multiply the \\(sin\\) and \\(cos\\) expressions by \\(l\\). Now when you click the arrow to the left of the action, you should see the photon jump a distance of \\(l\\) in a random direction! We will change the value of \\(l\\) later, but for now we can set it to \\(1\\).
 
 **Question (1 sentence answer): Will the length of each step be the same for every star? Why or why not?**
 
@@ -123,28 +126,59 @@ Congrats!! Now we can use our model to answer build some intuition for how parti
 
 ## Conceptual Questions
 
+### Reflecting on Your Model
+
 As you run your model, the photon takes a jittery path from the core of the star to its edge. In two sentences, explain why the photon takes this path instead of a straight one out of the star.
 
 A photon moving out of the Sun with no resistance should escape the Sun in less than 10 seconds. Based on what you have seen in your model, how long do you think it would take a photon making a random walk? (Each of you should make your own estimate.)
 
+### A Photon Escaping the Sun
+
 We want to find how long it takes a photon to escape the Sun. Let's assume your step length in Desmos is equal to 1cm (which is pretty accurate for the Sun). Set the radius of your star to equal the Sun's radius in centimeters (\\(R_{\odot} = 7*10^{10}~cm\\)). Now run your model. What is happening? What might be the issue with answering our question this way?
 
-Hmm. Maybe we could find a relationship between the radius of our star and the number of steps the photon takes to escape? Try a few different radii (10,20,35,50,100) and see how many steps it takes for the photon to escape. What is the approximate relation between \\(D\\) and \\(N\\)? *Hint: The relation should take the form of a power rule: \\(N = D^{x}\\) where \\(x\\) is some positive integer. Use the data you collect to find \\(x\\). It's ok if the power rule predicts values for \\(N\\) that are slightly higher than the ones you measure.*
+Hmm. Maybe we could find a relationship between the radius of our star and the number of steps the photon takes to escape? Try a few different values for the average photon path length \\(l\\) (0.5,1,2,3,5) and see how many steps it takes for the photon to escape. Try running your model 3-5 times for each value of l and record the average number of steps it takes the photon to escape the star for each path length. We can assume that the number of steps is related to the ratio between step length and the radius of the star. What is the approximate relation between \\(\dfrac{r}{l}\\) and \\(N\\)? *Hint: The relation should take the form of a power rule: \\(N = \dfrac{r}{l}^{x}\\) where \\(x\\) is some positive integer. Use the data you collect to find \\(x\\). It's ok if the power rule predicts values for \\(N\\) that are slightly different from the ones you measure. Also note that we made the radius \\(r\\) equal to 100 when building the model.*
 
-Now use your relation between \\(D\\) and \\(N\\) to calculate the number of steps a photon needs to take to escape from the Sun. (For \\(D\\) use the radius of the Sun measured in centimeters.) Now find how long it takes the photon to escape from the Sun. Is your answer what you expected?
+Now use your relation between \\(D\\) and \\(N\\) to calculate the number of steps a photon needs to take to escape from the Sun. *Note: You can create a folder called **Calculations** to add any equations or expressions to help you answer this question.* (For \\(D\\) use the radius of the Sun measured in centimeters.) Now find how long it takes the photon to escape from the Sun. Is your answer what you expected?
 
+### Improving Your Model
+
+The path length of the photon is affected by two factors in a star: the spacing of particles in the star and the likelihood that each particle will interfere with the photon (not all particles reflect light in the same way). The chance that the particle will reflect (or scatter) the photon is called the opacity. A high average opacity in a star means a high chance of light scattering off particles and a low opacity means a low chance of scattering.
+
+When either of these two factors increase (i.e. when the density or the opacity go up), the path length of the photon decreases. Thus we can reason that density and opacity are both inversely related to the path length.
+
+This means we can write an equation for \\(l\\). If we call density \\(d\\) and opacity \\(k\\), we can change our value for \\(l\\) to be:
+
+$$ l = \dfrac{1}{dk} $$
+
+Now add two sliders, one for \\(d\\) and one for \\(k\\). You can put them both in the **Variables** folder. Your model now includes density and opacity!
+
+Try running your model and changing the density and opacity sliders while the particle is moving. What do you notice about the movement of the particle? Do you think a higher opacity would lead to a shorter or longer escape time? What about a higher density? Do these conclusions make sense? Discuss with your activity partner.
+
+### Putting It All Together
+
+Using your relation between path length and escape time that you found earlier, estimate by what factor the escape would change if the density of the star was doubled? What about if the opacity was doubled? What if the radius was doubled?
+
+Can you sketch plots for each of these values? Make three graphs, one with density on the x-axis, one with opacity on the x-axis, and one with radius on the x-axis. Put escape time on the y-axis for all three and then plot a handful of values until you have a general relation. Are the relations intuitive? Try explaining to your activity partner why your curves have the shapes they do.
+
+
+
+
+
+
+
+<!-- 
 A star with twice the mass of the sun should have a radius two times as big. In general,
 
 $$ M \sim R $$
 
 Use this relation and your answers to the questions above to calculate how long it should take for a photon to escape stars with masses 2,5,10, and 50 times the mass of the Sun. Sketch or plot the escape time of a photon versus the mass of the star it's escaping (on the x-axis plot masses from 1 to 50 times the mass of the Sun and on the y-axis plot time). Does this curve look like what you expected?
 
+Add a path length variable — do we want opacity to change wtih mass? (i.e. do we care about low mass stars?)
 
-
-<!-- 
-General Questions
+Learning Goals
 
 - How does density change over the main sequence? (with respect to mass)
 - How does path length change with mass?
-- How does energy production change with mass?
-- How does the time it takes for a photon to leave the sun change with mass? -->
+- How does the time it takes for a photon to leave the sun change with mass? 
+
+-->
