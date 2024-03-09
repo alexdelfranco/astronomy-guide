@@ -3,8 +3,6 @@
 
 ## Learning Goals
 
-- 
-
 
 ## Pre Questions
 

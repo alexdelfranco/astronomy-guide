@@ -20,11 +20,11 @@ In this activity, we are going to explore a model of a star where we can examine
 
 #### Opening a Python Notebook
 
-We can begin by opening a new Python Notebook by clicking the following link: <a href="" target="_blank">Blank Python Notebook</a>. The notebook has no code, but is divided into sections that will be useful for us later. You may notice that the current notebook won't save unless you are logged into a Google account. Have one of your team members log into their Google account and save the activity by clicking **Copy to Drive**. You are now ready to begin building your model!
+We can begin by opening a new Python Notebook by clicking the following link: <a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/Focus-Group-Activities/Random-Walk-Open-Ended-Template.ipynb" target="_blank">Blank Python Notebook</a>. The notebook has no code, but is divided into sections that will be useful for us later. You may notice that the current notebook won't save unless you are logged into a Google account. Have one of your team members log into their Google account and save the activity by clicking **Copy to Drive**. You are now ready to begin building your model!
 
 #### Importing and Setup
 
-To make your model work smoothly, we need to run a bit of setup code. First, we can add our generic import statements. You will only be using three packages to build your model: `matplotlib.pyplot`, `numpy`, and `math`. You can import both of them in the *Imports* section by writing the following (the `as` keyword lets us define a shorthand to access these packages more easily in the future):
+To make your model work smoothly, we need to run a bit of setup code. First, we can add our generic import statements. You will only be using three packages to build your model: `matplotlib.pyplot`, `numpy`, and `math`. You can import both of them in the **Imports** section by writing the following (the `as` keyword lets us define a shorthand to access these packages more easily in the future):
 
 `import matplotlib.pyplot as plt`
 
@@ -82,7 +82,7 @@ As the photon moves, we want to keep track of its path. We can create lists in P
 
 Nice work! We can now start building the heart of your model!
 
-**Question (1 sentence answer): Why does the photon start its path at the center of the star?**
+**Question (discuss with your activity partner): Why does the photon start its path at the center of the star?**
 
 ### Adding Movement
 
@@ -112,7 +112,7 @@ We can do this by using the `np.random.random()` function. `np.random.random()` 
 
 Nice work! Now that we have our angle, we can instruct our photon to actually move.
 
-**Question (1 sentence answer): Why are we choosing a random angle here?**
+**Question (discuss with your activity partner): Why are we choosing a random angle here?**
 
 ### Moving our Photon
 
@@ -136,7 +136,7 @@ Finish it by adding a final line after the loop to export (or return) the lists 
 
 Make sure it is indented only once (so it isn't "inside" of our loop). We can now start using it to simulate our photon's path through the star.
 
-**Question (1 sentence answer): Will the length of each step be the same for every star? Why or why not?**
+**Question (discuss with your activity partner): Will the length of each step be the same for every star? Why or why not?**
 
 ### Running Our Model
 
