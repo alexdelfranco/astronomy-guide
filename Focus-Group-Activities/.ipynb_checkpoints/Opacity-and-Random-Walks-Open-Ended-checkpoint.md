@@ -42,7 +42,7 @@ $$ X = 0 $$
 
 $$ Y = 0 $$
 
-Desmos recognizes two numbers separated by a comma between parentheses as a point. We can plot our photon by typing:
+Desmos recognizes two numbers separated by a comma between parentheses as a point. We can plot our photon by typing in a new line:
 
 $$ (X,Y) $$
 
@@ -90,7 +90,7 @@ We can change how far the photon jumps by adding a multiplier in front of our \\
 
 **Question (1 sentence answer): Will the length of each step be the same for every star? Why or why not?**
 
-Now that we have our action, lets automate!
+Now that we have our action, let's automate!
 
 ### Automating our Model
 
@@ -108,13 +108,13 @@ Now when you click the arrow to the left of \\(A\\), the value of \\(N\\) should
 
 Now we can automate! Click the **+** button at the top of the left panel and add a **ticker**. You should see the ticker appear as a bar above the panel. This ticker will run an action every certain number of milliseconds (10 milliseconds by default). We want it to move the photon randomly until it reaches the edge of our star. We can do this by adding a conditional statement. Following the word *Run* in the ticker bar, type:
 
-$${D<100:A}$$
+$$\{D<100:A\}$$
 
 This means that as long as \\(D\\) is less than \\(100\\) (the radius we specified for our star) it will keep running our action A. Drag the photon to the center of the star and click the ticker button (which looks like a metronome) to see our model run!
 
 ### Tweaks to Make the Model Better
 
-We are almost done with the model! We can add two more things to make it a little easier to use. First, lets add a **Reset** button. Add a new expression called *R* or *R_eset*. We want to set it equal to three actions, all of which help reset the model.
+We are almost done with the model! We can add two more things to make it a little easier to use. First, let's add a **Reset** button. Add a new expression called *R* or *R_eset*. We want to set it equal to three actions, all of which help reset the model.
 
 $$ R_{eset} = N \to 0, X \to 0, Y \to 0 $$
 
@@ -134,11 +134,13 @@ A photon moving out of the Sun with no resistance should escape the Sun in less 
 
 ### A Photon Escaping the Sun
 
-We want to find how long it takes a photon to escape the Sun. Let's assume your step length in Desmos is equal to 1cm (which is pretty accurate for the Sun). Set the radius of your star to equal the Sun's radius in centimeters (\\(R_{\odot} = 7*10^{10}~cm\\)). Now run your model. What is happening? What might be the issue with answering our question this way?
+We want to find how long it takes a photon to escape the Sun. Let's assume your step length in Desmos is equal to 1 cm (which is pretty accurate for the Sun). Set the radius of your star to equal the Sun's radius in centimeters (\\(R_{\odot} = 7*10^{10}~cm\\)). Now run your model. What is happening? What might be the issue with answering our question this way?
 
-Hmm. Maybe we could find a relationship between the radius of our star and the number of steps the photon takes to escape? Try a few different values for the average photon path length \\(l\\) (0.5,1,2,3,5) and see how many steps it takes for the photon to escape. Try running your model 3-5 times for each value of l and record the average number of steps it takes the photon to escape the star for each path length. We can assume that the number of steps is related to the ratio between step length and the radius of the star. What is the approximate relation between \\(\dfrac{r}{l}\\) and \\(N\\)? *Hint: The relation should take the form of a power rule: \\(N = \dfrac{r}{l}^{x}\\) where \\(x\\) is some positive integer. Use the data you collect to find \\(x\\). It's ok if the power rule predicts values for \\(N\\) that are slightly different from the ones you measure. Also note that we made the radius \\(r\\) equal to 100 when building the model.*
+Hmm. Maybe we could find a relationship between the radius of our star and the number of steps the photon takes to escape? Try a few different values for the average photon path length \\(l\\) (0.5,1,2,3,5) and see how many steps it takes for the photon to escape. Try running your model 3-5 times for each value of l and record the average number of steps it takes the photon to escape the star for each path length. We can assume that the number of steps is related to the ratio between step length and the radius of the star. What is the approximate relation between \\(\dfrac{r}{l}\\) and \\(N\\)? *Hint: The relation should take the form of a power rule: \\(N = \(\dfrac{r}{l}\)^{x}\\) where \\(x\\) is some positive integer. Use the data you collect to find \\(x\\). It's ok if the power rule predicts values for \\(N\\) that are slightly different from the ones you measure. Also note that we made the radius \\(r\\) equal to 100 when building the model.*
 
-Now use your relation between \\(D\\) and \\(N\\) to calculate the number of steps a photon needs to take to escape from the Sun. *Note: You can create a folder called **Calculations** to add any equations or expressions to help you answer this question.* (For \\(D\\) use the radius of the Sun measured in centimeters.) Now find how long it takes the photon to escape from the Sun. Is your answer what you expected?
+Now use your relation between \\(r\\) and \\(N\\) to calculate the number of steps a photon needs to take to escape from the Sun. *Note: You can create a folder called **Calculations** to add any equations or expressions to help you answer this question.* (For \\(r\\) use the radius of the Sun measured in centimeters.)
+
+Now find how long it takes the photon to escape from the Sun. Is your answer what you expected?
 
 ### Improving Your Model
 

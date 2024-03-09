@@ -1,6 +1,3 @@
----
-sort: 2
----
 
 # Pre-Post Survey Questions & Learning Goals
 
