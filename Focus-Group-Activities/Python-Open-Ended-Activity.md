@@ -14,7 +14,9 @@ While this may seem straightforward enough, the mechanisms that tell us how the 
 
 ## The Activity
 
-In this activity, we are going to explore a model of a star where we can examine the true path that a photon takes to escape. We will build this model in Python and use it to discover some fundamental properties of photons and stars.
+In this activity, we are going to explore a model of a star where we can examine the true path that a photon takes to escape. We will build this model in Python and use it to discover some fundamental properties of photons and stars. Before we start, take a moment to complete this <a href="https://forms.gle/1eUWGcZpXcRVj8197" target="_blank">Pre-Activity Survey</a> with your group
+
+
 
 ### Setup
 
@@ -188,17 +190,13 @@ And you've done it! We can now print the total step count or we can add it to th
 
 at the end of the cell with our plotting code. You just created a fully functional physics simulation. Good job!
 
-
-
-
-## Conceptual Questions
+## Conceptual Questions (Discussions with your activity partner)
 
 ### Reflecting on Your Model
 
-As you run your model, the photon takes a jittery path from the core of the star to its edge. Explain briefly in your own words why the photon takes this path instead of a straight one out of the star.
+As you run your model, the photon takes a jittery path from the core of the star to its edge. Explain to your activity partner briefly in your own words why the photon takes this path instead of a straight one out of the star.
 
-A photon moving out of the Sun with no resistance should escape the Sun in less than 10 seconds. Based on what you have seen by running your real physical model of a photon traveling through a star, estimate again how long you think it would take a photon making this “random walk” to escape?
-(Each of you should make your own estimate.)
+A photon moving out of the Sun with no resistance should escape the Sun in less than 10 seconds. Based on what you have seen by running your real physical model of a photon traveling through a star, estimate again how long you think it would take a photon making this “random walk” to escape? (Each of you should make your own estimate.)
 
 *It’s worth noting two differences between your model and real life. First, we are assuming the radius of the star in our model is around 100cm. Of course that isn’t a good estimate for the entire star, but it actually is a pretty good model of what is happening in a small sphere inside the star. If we assume the physics are the same for the rest of the star (which they mostly are!) our model does a pretty good job.*
 
@@ -245,3 +243,8 @@ Try running your model a few times with different values of density and opacity.
 Using your relation between path length and escape time that you found earlier, estimate by what factor the escape time would change if the density of the star was doubled? What about if the opacity was doubled? What if the radius was doubled?
 
 Try sketching the relationships between the key physical properties here. Make three graphs, one with density on the x-axis, one with opacity on the x-axis, and one with radius on the x-axis. Put escape time on the y-axis for all three and then plot a handful of values until you have a general relation. Are the relations intuitive? Explain to your activity partner why your curves have the shapes they do.
+
+## Finishing
+
+Nice work!! You just made a complete model of the interior of a star. That's no small accomplishment. As a group, reflect on what you learned by filling out this <a href="https://forms.gle/bWhYqAeFMbKfsL286" target="_blank">Post-Activity Survey</a>. Then head over to the main table for a final discussion.
+
