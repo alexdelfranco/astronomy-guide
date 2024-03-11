@@ -196,7 +196,7 @@ at the end of the cell with our plotting code. You just created a fully function
 
 As you run your model, the photon takes a jittery path from the core of the star to its edge. Explain to your activity partner briefly in your own words why the photon takes this path instead of a straight one out of the star.
 
-A photon moving out of the Sun with no resistance should escape the Sun in less than 10 seconds. Based on what you have seen by running your real physical model of a photon traveling through a star, estimate again how long you think it would take a photon making this “random walk” to escape? (Each of you should make your own estimate.)
+A photon moving out of the Sun with no resistance should escape the Sun in less than 5 seconds. Based on what you have seen by running your real physical model of a photon traveling through a star, estimate again how long you think it would take a photon making this “random walk” to escape? (Each of you should make your own estimate.)
 
 *It’s worth noting two differences between your model and real life. First, we are assuming the radius of the star in our model is around 100cm. Of course that isn’t a good estimate for the entire star, but it actually is a pretty good model of what is happening in a small sphere inside the star. If we assume the physics are the same for the rest of the star (which they mostly are!) our model does a pretty good job.*
 
