@@ -18,11 +18,13 @@ In this activity, we are going to explore a model of a star where we can examine
 
 ### The Model
 
-<iframe src="https://www.desmos.com/calculator/2hlr7spstq" width="950" height="600" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/cglf9qs276" width="950" height="600" style="border: 1px solid #ccc" frameborder=0></iframe>
+ 
+---
 
-The model shows a 2D cross section of a star with a photon trapped inside. The photon (represented by the point at //(0,0//)) can be dragged around. Running the model simulates a photon's random path throughout a star. To run the model, click the metronome button at the top left of the left-hand panel. To reset the model, click the right-pointing arrow next to the cell that says \\(R_{eset}\\).
+The model (<a href="https://www.desmos.com/calculator/cglf9qs276" target="_blank">linked here</a>) shows a 2D cross section of a star with a photon trapped inside. The photon (represented by the point at \\(0,0\\)) can be dragged around. Running the model simulates a photon's random path throughout a star. To run the model, click the metronome button at the top left of the left-hand panel. To reset the model, click the right-pointing arrow next to the cell that says \\(R_{eset}\\).
 
-The variable \\(N\\) tells you the number of steps the photon has travelled. The variable \\(l\\) is how far the photon moves in one step. The radius of the star is set to be \\(100\\). We can assign units to these values later in the activity.
+The red number at the center measures the straight-line distance the photon has travelled. The variable \\(N\\) tells you the number of steps the photon has travelled. The variable \\(l\\) is how far the photon moves in one step. The variable \\(r\\) sets the radius of the star and is by default \\(100\\). We can assign units to these values later in the activity.
 
 As you experiment with the model, discuss the following questions with your partner.
 
@@ -68,11 +70,11 @@ This means we can write an equation for \\(l\\) (which just represents step leng
 
 $$ l = \dfrac{1}{dk} $$
 
-Here is a version of the model that includes density and opacity:
+Below (and <a href="https://www.desmos.com/calculator/vo3jm5tly8" target="_blank">linked here</a>) is a version of the model that includes density and opacity:
 
-<iframe src="https://www.desmos.com/calculator/8y8qigztxr" width="950" height="600" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/vo3jm5tly8" width="950" height="600" style="border: 1px solid #ccc" frameborder=0></iframe>
 
-
+---
 
 Try running the model a few times with different values of density and opacity. What do you notice about the movement of the particle when you make these changes? Use the plotting add ons to zoom in on the individual steps of the particle. Does a higher opacity lead to a shorter or longer escape time? What about a higher density? Do these conclusions make sense? Discuss with your activity partner.
 
