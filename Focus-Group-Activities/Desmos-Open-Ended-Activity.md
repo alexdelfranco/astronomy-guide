@@ -1,5 +1,5 @@
 ---
-sort: 1
+sort: 2
 ---
 
 # Open Ended Desmos Activity
@@ -142,13 +142,13 @@ A photon moving out of the Sun with no resistance should escape the Sun in less 
 
 ### A Photon Escaping the Sun
 
-We want to find how long it takes a real photon to escape the Sun. Let's assume your step length in your model is equal to 1 mm (which is pretty accurate for the Sun). Set the radius of your star to equal the Sun's radius in centimeters (\\(R_{\odot} = 7*10^{11}~mm\\)). Now run your model. What do you see happening? Is it possible to use this simulation to answer this question directly? Why or why not??
+We want to find how long it takes a real photon to escape the Sun. Let's assume your step length in your model is equal to 1 mm (which is pretty accurate for the Sun). Set the radius of your star to equal the Sun's radius in millimeters (\\(R_{\odot} = 7*10^{11}~mm\\)). Now run your model. What do you see happening? Is it possible to use this simulation to answer this question directly? Why or why not??
 
 Hmm. Maybe we could find a relationship between the straight line distance the photon traveled (here the radius of our star) and the number of steps the photon takes to escape? Try a few different values (0.5, 1, 2, 3, and 5) for the average photon path length (the `l` variable in your model) and observe how many steps it takes for the photon to escape. Run your model 3-5 times for each value of the path length and record the average number of steps (\\(N\\)) it takes the photon to escape the star for each path length.
 
 The number of steps a photon takes is related to the ratio between step length and the radius of the star. What is the approximate relation between \\(\dfrac{r}{l}\\) and \\(N\\) (where l is the step length in our model)? *Hint: The relation should take the form of a power law: \\(N = \(\dfrac{r}{l}\)^x\\) where \\(x\\) is some positive integer. Use the data you collect to find \\(x\\). Try plotting your points and drawing a curve through them. It’s ok if the curve doesn’t hit every point that you measured — it should go through the average of them all. See if you can use the curve to find an integer value for \\(x\\). Also note that we made the radius \\(r\\) equal to 100 when building the model.*
 
-Now use your relation between \\(\dfrac{r}{l}\\) and \\(N\\) to calculate the number of total steps a photon needs to take to escape from the Sun. *Note: You can create new cells to add any equations or expressions to help you answer this question.* (For \\(l\\) use \\(1~mm\\) and for \\(r\\) use the radius of the Sun measured in centimeters from your equation sheet.) 
+Now use your relation between \\(\dfrac{r}{l}\\) and \\(N\\) to calculate the number of total steps a photon needs to take to escape from the Sun. *Note: You can create new cells to add any equations or expressions to help you answer this question.* (For \\(l\\) use \\(1~mm\\) and for \\(r\\) use the radius of the Sun measured in millimeters from your equation sheet.) 
 
 Given the number of steps you estimated, now find how long it takes the photon to escape from the Sun. Does the answer surprise you? Why or why not?
 
