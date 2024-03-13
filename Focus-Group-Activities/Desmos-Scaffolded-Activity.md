@@ -70,9 +70,9 @@ This means we can write an equation for \\(l\\) (which just represents step leng
 
 $$ l = \dfrac{1}{dk} $$
 
-Below (and <a href="https://www.desmos.com/calculator/vo3jm5tly8" target="_blank">linked here</a>) is a version of the model that includes density and opacity:
+Below (and <a href="https://www.desmos.com/calculator/6dfxcdtyee" target="_blank">linked here</a>) is a version of the model that includes density and opacity:
 
-<iframe src="https://www.desmos.com/calculator/vo3jm5tly8" width="950" height="600" style="border: 1px solid #ccc" frameborder=0></iframe>
+<iframe src="https://www.desmos.com/calculator/6dfxcdtyee" width="950" height="600" style="border: 1px solid #ccc" frameborder=0></iframe>
 
 ---
 
