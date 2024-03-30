@@ -16,8 +16,6 @@ While this may seem straightforward enough, the mechanisms that tell us how the 
 
 In this activity, we are going to explore a model of a star where we can examine the true path that a photon takes to escape. We will build this model in Python and use it to discover some fundamental properties of photons and stars. Before we start, take a moment to complete this <a href="https://forms.gle/1eUWGcZpXcRVj8197" target="_blank">Pre-Activity Survey</a> with your group
 
-
-
 ### Setup
 
 #### Opening a Python Notebook

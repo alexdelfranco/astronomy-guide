@@ -28,13 +28,13 @@ Run the model again and talk to your partner about what you see. If the plotting
 
 As you experiment with the model, discuss the following questions with your partner.
 
-**Question: What is the squiggly blue line inside the star? Why does it look like that?**
+**What is the squiggly blue line inside the star? Why does it look like that?**
 
-**Question: Why does the photon start its path at the center of the star?**
+**Why does the photon start its path at the center of the star?**
 
-**Question: Why does the model choose a random direction for the photon at each step?**
+**Why does the model choose a random direction for the photon at each step?**
 
-**Question: Will the length of each step be the same for every star? Why or why not?**
+**Will the length of each step be the same for every star? Why or why not?**
 
 Take a few more minutes to play around with the model. Talk to your partner about how to use it and what you are learning.
 
