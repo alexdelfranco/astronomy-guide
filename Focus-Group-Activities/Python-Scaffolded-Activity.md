@@ -2,7 +2,7 @@
 sort: 1
 ---
 
-# Scaffolded Desmos Activity
+# Scaffolded Python Activity
 
 <!-- **Definition: ** -->
 
@@ -14,23 +14,25 @@ While this may seem straightforward enough, the mechanisms that tell us how the 
 
 ## The Activity
 
-In this activity, we are going to explore a model of a star where we can examine the true path that a photon takes to escape. We will utilize a model built in Desmos and use it to discover some fundamental properties of photons and stars. Before we start, take a moment to complete this <a href="https://forms.gle/1eUWGcZpXcRVj8197" target="_blank">Pre-Activity Survey</a> with your group
+In this activity, we are going to explore a model of a star where we can examine the true path that a photon takes to escape. We will utilize a model built in Python and use it to discover some fundamental properties of photons and stars. Before we start, take a moment to complete this <a href="https://forms.gle/1eUWGcZpXcRVj8197" target="_blank">Pre-Activity Survey</a> with your group
 
 ### The Model
 
-<iframe src="https://www.desmos.com/calculator/d7ahlmn8fu" width="950" height="600" style="border: 1px solid #ccc" frameborder=0></iframe>
- 
----
+The model (<a href="https://www.desmos.com/calculator/d7ahlmn8fu" target="_blank">linked here</a>) has two main sections. The first section, titled "Model Setup" is made up of some imports and two functions that compute the math and visual for the model. Run those cells and then move to the section titled "Running the Model." When you run the cell, you'll see a blue circle which is a 2D cross section of a star.
 
-The model (<a href="https://www.desmos.com/calculator/d7ahlmn8fu" target="_blank">linked here</a>) shows a 2D cross section of a star with a photon trapped inside. The photon (represented by the point at \\(0,0\\)) can be dragged around. Running the model simulates a photon's random path throughout a star. To run the model, click the metronome button at the top left of the left-hand panel. To reset the model, click the right-pointing arrow next to the cell that says \\(R_{eset}\\).
+Inside the star, we can see a plot of the path that the photon took while moving through the star. When you run the cell, the model simulates the random path the photon takes on its way out of the star. The number in the title of the plot tells you the total number of steps the photon has travelled.
 
-The red number at the center measures the straight-line distance the photon has travelled. The variable \\(N\\) tells you the number of steps the photon has travelled. The variable \\(l\\) is how far the photon moves in one step. The variable \\(r\\) sets the radius of the star and is by default \\(100\\). We can assign units to these values later in the activity.
+The default radius of the star is 100, which you can change by altering the number after `radius=` in the code cell you just ran. As the photon moves, the length of each of its steps is set by the number after `step_length=`. We can assign units to both of these values later in the activity.
+
+Run the model again and talk to your partner about what you see. If the plotting extensions loaded correctly, you can click the button with the square box on the left of the plot and then select a region inside the star to zoom in on. Play around with the model and see if it works like you expect.
 
 As you experiment with the model, discuss the following questions with your partner.
 
+**Question: What is the squiggly blue line inside the star? Why does it look like that?**
+
 **Question: Why does the photon start its path at the center of the star?**
 
-**Question: Why does the model choose a random angle for the photon?**
+**Question: Why does the model choose a random direction for the photon at each step?**
 
 **Question: Will the length of each step be the same for every star? Why or why not?**
 
@@ -44,7 +46,7 @@ As you run the model, the photon takes a jittery path from the core of the star 
 
 A photon moving out of the Sun with no resistance should escape the Sun in less than 5 seconds. Based on what you have seen by running a real physical model of a photon traveling through a star, estimate again how long you think it would take a photon making this “random walk” to escape? (Each of you should make your own estimate.)
 
-*It’s worth noting two differences between the model and real life. First, we are assuming the radius of the star in the model is around 100mm. Of course that isn’t a good estimate for the entire star, but it actually is a pretty good model of what is happening in a small sphere inside the star. If we assume the physics are the same for the rest of the star (which they mostly are!) the model does a pretty good job.*
+*It’s worth noting two differences between the model and real life. First, in a star like the sun, the average path length of a photon is about 1mm, which means by default we are assuming the radius of the star in the model is around 100mm. Of course that isn’t a good estimate for the entire star, but it actually is a pretty good model of what is happening in a small sphere inside the star. If we assume the physics are the same for the rest of the star (which they mostly are!) the model does a pretty good job.*
 
 *Second, it is worth noting that the model assumes the same step length each time the photon moves. In reality, this is an average step length. There is a lot of randomness inside of stars — sometimes the photon barely jumps and sometimes it jumps a lot! But the step length (often referred to scientifically as the “mean free path” which just means the average unobstructed path of the photon) is still a really good estimate of the photon’s average step size!*
 
@@ -52,9 +54,9 @@ A photon moving out of the Sun with no resistance should escape the Sun in less 
 
 We want to find how long it takes a real photon to escape the Sun. Let's assume the step length in the model is equal to 1 mm (which is pretty accurate for the Sun). Set the radius of the star to equal the Sun's radius in millimeters (\\(R_{\odot} = 7*10^{11}~mm\\)). Now run the model. What do you see happening? Is it possible to use this simulation to answer this question directly? Why or why not??
 
-Hmm. Maybe we could find a relationship between the straight line distance the photon traveled (here the radius of the star) and the number of steps the photon takes to escape? Try a few different values (0.5, 1, 2, 3, and 5) for the average photon path length (the `l` variable in the model) and observe how many steps it takes for the photon to escape. Run the model 3-5 times for each value of the path length and record the average number of steps (\\(N\\)) it takes the photon to escape the star for each path length.
+Hmm. Maybe we could find a relationship between the straight line distance the photon traveled (here the radius of the star) and the number of steps the photon takes to escape? Try a few different values (0.5, 1, 2, 3, and 5) for the average photon path length (by changing the number in the cell where you run the model) and observe how many steps it takes for the photon to escape. Run the model 3-5 times for each value of the path length and record the average number of steps (\\(N\\)) it takes the photon to escape the star for each path length.
 
-The number of steps a photon takes is related to the ratio between step length and the radius of the star. What is the approximate relation between \\(\dfrac{r}{l}\\) and \\(N\\) (where l is the step length in the model)? *Hint: The relation should take the form of a power law: \\(N = \(\dfrac{r}{l}\)^x\\) where \\(x\\) is some positive integer. Use the data you collect to find \\(x\\). Try plotting your points and drawing a curve through them. It’s ok if the curve doesn’t hit every point that you measured — it should go through the average of them all. See if you can use the curve to find an integer value for \\(x\\). Also note that we made the radius \\(r\\) equal to 100 when building the model.*
+The number of steps a photon takes is related to the ratio between step length and the radius of the star. What is the approximate relation between \\(\dfrac{r}{l}\\) and \\(N\\) (where \\(r\\) is the radius of the star and \\(l\\) is the step length of the photon)? *Hint: The relation should take the form of a power law: \\(N = \(\dfrac{r}{l}\)^x\\) where \\(x\\) is some positive integer. Use the data you collect to find \\(x\\). Try plotting your points and drawing a curve through them. It’s ok if the curve doesn’t hit every point that you measured — it should go through the average of them all. See if you can use the curve to find an integer value for \\(x\\). Also note that we made the radius \\(r\\) equal to 100 when building the model.*
 
 Now use your relation between \\(\dfrac{r}{l}\\) and \\(N\\) to calculate the number of total steps a photon needs to take to escape from the Sun. *Note: You can create new cells to add any equations or expressions to help you answer this question.* (For \\(l\\) use \\(1~mm\\) and for \\(r\\) use the radius of the Sun measured in millimeters from your equation sheet.) 
 
@@ -66,13 +68,11 @@ The path length of a photon is affected by two physical properties of a star: th
 
 When either of these two factors increase (i.e. when the density or the opacity go up), the path length of the photon decreases. Thus we can reason that density and opacity are both inversely related to the path length.
 
-This means we can write an equation for \\(l\\) (which just represents step length). If we call density \\(d\\) and opacity \\(k\\), we can change the value for \\(l\\) and implement the equation:
+This means we can write an equation for \\(l\\) (which just represents step length). If we call density \\(d\\) and opacity \\(k\\), we can write the value for \\(l\\) using the equation:
 
 $$ l = \dfrac{1}{dk} $$
 
-Below (and <a href="https://www.desmos.com/calculator/zvdehrxp5l" target="_blank">linked here</a>) is a version of the model that includes density and opacity:
-
-<iframe src="https://www.desmos.com/calculator/zvdehrxp5l" width="950" height="600" style="border: 1px solid #ccc" frameborder=0></iframe>
+It turns out that the model already includes density and opacity. Replace the `step_length=` input in the model with `opacity=` and `density=`, both separated by a comma. Then input values for both and run the model. If you specify both an opacity or density and a step_length, the model will get confused and print an error message.
 
 ---
 
