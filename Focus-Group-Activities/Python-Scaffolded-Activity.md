@@ -18,7 +18,7 @@ In this activity, we are going to explore a model of a star where we can examine
 
 ### The Model
 
-The model (<a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/Focus-Group-Activities/Random-Walk-Scaffolded.ipynb#scrollTo=a3458436" target="_blank">linked here</a>) has two main sections. The first section, titled "Model Setup" is made up of some imports and two functions that compute the math and visual for the model. Run those cells and then move to the section titled "Running the Model." When you run the cell, you'll see a blue circle which is a 2D cross section of a star.
+The model (<a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/Focus-Group-Activities/Random-Walk-Scaffolded.ipynb" target="_blank">linked here</a>) has two main sections. The first section, titled "Model Setup" is made up of some imports and two functions that compute the math and visual for the model. Run those cells and then move to the section titled "Running the Model." When you run the cell, you'll see a blue circle which is a 2D cross section of a star.
 
 Inside the star, we can see a plot of the path that the photon took while moving through the star. When you run the cell, the model simulates the random path the photon takes on its way out of the star. The number in the title of the plot tells you the total number of steps the photon has travelled.
 
