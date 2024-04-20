@@ -1,8 +1,8 @@
 ---
-sort: 3
+sort: 2
 ---
 
-# In Development - Projects
+# Thesis
 
 This repository serves as a collection of learning materials designed synchronously with the F23 run of Astronomy 235 taught at Amherst College.
 

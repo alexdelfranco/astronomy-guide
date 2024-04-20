@@ -16,7 +16,7 @@ sort: 1
   height="1000vh"
 ></iframe> -->
 
-<script type="application/javascript"> function resizeIFrameToFitContent( iFrame ) {
+<!-- <script type="application/javascript"> function resizeIFrameToFitContent( iFrame ) {
     iFrame.width  = iFrame.contentWindow.document.body.scrollWidth;
     iFrame.height = iFrame.contentWindow.document.body.scrollHeight;
 }
@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', function(e) {
   id="testFrame"
   src="./export1.html"
   style="border:none;"
-></iframe>
+></iframe> -->
 
 ## Sections in this Chapter:
 {% include list.liquid all=true %}
