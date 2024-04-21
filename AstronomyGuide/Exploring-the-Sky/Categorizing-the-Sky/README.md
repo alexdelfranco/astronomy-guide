@@ -6,7 +6,7 @@ sort: 1
 
 Astronomy is one of the oldest natural sciences with some of the earliest star charts dating back over 30,000 years. For every generation of humans, the stars have elliceted wonder and awe, reminding us of the vast magnificense of the world around us. Over the millenium, astronomy has been refined to a highly precise scientific field which allows us to probe some of the deepest myseteries of the Universe.
 
-In this chapter, we explore some of the fundamentals of modern astronomy. We introduce **astrometry**, the art of tracking the positions of stars. We introduce **Flux** and **Luminosity**, showing that they are related by an **inverse-square force law**. Finally, we explore how we can use a technique called **parallax** to measure the distance from stars and how we can use that distance along with the **magnitude system** to find the true brightness of billions of stars in the sky.
+In this chapter, we explore some of the fundamentals of modern astronomy. We introduce **astrometry**, the art of tracking the positions of stars. We introduce **flux** and **luminosity**, showing that they are related by an **inverse-square force law**. Finally, we explore how we can use a technique called **parallax** to measure the distance from stars and how we can use that distance along with the **magnitude system** to find the true brightness of billions of stars in the sky.
 
 ## Sections in this Chapter:
 {% include list.liquid all=true %}
