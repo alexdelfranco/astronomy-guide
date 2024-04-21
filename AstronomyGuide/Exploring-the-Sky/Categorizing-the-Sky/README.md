@@ -13,7 +13,7 @@ In this chapter, we explore some of the fundamentals of modern astronomy. We int
 
 
 
-
+<!-- test -->
 
 <!-- Before beginning this activity, it is hightly recommended that you make a Desmos account. The accounts are completely free and allow you to store your own graphs and figures! If you don't make an account and save your work, you might lose graphs and figures that you've put a lot of time into. You can make an account by heading to <a href"https://www.desmos.com"  target="_blank">www.desmos.com</a> and clicking *Log In*. You can then click the *Sign In* button and use a Google Account or your email.
 
