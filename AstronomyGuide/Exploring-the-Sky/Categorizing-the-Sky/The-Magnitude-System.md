@@ -39,7 +39,7 @@ where we have used M to refer to the star's absolute magnitude since we are view
 ## Questions
 
 - Why do we care about the magnitude system?
-- When would we use apparent and absolute magnitudes?
+- When would we use apparent magnitudes?
 
 ## Takeaways
 
@@ -52,3 +52,5 @@ Scientists use apparent magnitudes to figure out how bright objects are in the s
 ## Activity
 
 <!-- python continuation, turning fluxes into mags into app mags with distances (due to parallax) -->
+
+### <a href="https://colab.research.google.com/github/alexdelfranco/astronomy-guide/blob/master/AstronomyGuide/Exploring-the-Sky/Categorizing-the-Sky/activities/magnitude.ipynb" target="_blank">Click here to access the Python activity for this section!</a>
