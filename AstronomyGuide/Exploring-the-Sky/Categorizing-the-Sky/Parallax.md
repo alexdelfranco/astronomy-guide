@@ -51,9 +51,11 @@ In this activity, we are going to explore parallax by building a model of the Ea
 
 ### Learning Desmos
 
-For this activity, we will use a premade graph and make changes to it as we progress. If you are new to Desmos, it might be useful to navigate to their tutorial. For most of what we are doing, you can reference the image below from Desmos' website:
+For this activity, we will use a premade graph and make changes to it as we progress. If you are new to Desmos, it might be useful to navigate to their tutorial.
 
-<img src="https://help.desmos.com/hc/article_attachments/4407513097613" alt="Desmos Tutorial, credit Desmos.com" width="600"/>
+ <!-- For most of what we are doing, you can reference the image below from Desmos' website: -->
+
+<!-- <img src="https://help.desmos.com/hc/article_attachments/4407513097613" alt="Desmos Tutorial, credit Desmos.com" width="600"/> -->
 
 In this activity, you will interact with a Desmos graph below while following the prompts listed after. You are welcome to open the graph in another tab and switch back and forth between both pages as necessary. Most importantly, have fun!
 
